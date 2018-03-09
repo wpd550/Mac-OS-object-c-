@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4398EE202052615900A8A305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4398EE1F2052615900A8A305 /* AppDelegate.m */; };
+		4398EE222052615900A8A305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4398EE212052615900A8A305 /* Assets.xcassets */; };
+		4398EE252052615900A8A305 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4398EE232052615900A8A305 /* MainMenu.xib */; };
+		4398EE282052615900A8A305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4398EE272052615900A8A305 /* main.m */; };
+		4398EE332052615900A8A305 /* icareFoneDatainfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4398EE322052615900A8A305 /* icareFoneDatainfoTests.m */; };
+		4398EE40205261C500A8A305 /* CIBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4398EE3F205261C500A8A305 /* CIBookManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4398EE2F2052615900A8A305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4398EE132052615900A8A305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4398EE1A2052615900A8A305;
+			remoteInfo = icareFoneDatainfo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4398EE1B2052615900A8A305 /* icareFoneDatainfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = icareFoneDatainfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4398EE1E2052615900A8A305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4398EE1F2052615900A8A305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4398EE212052615900A8A305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4398EE242052615900A8A305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4398EE262052615900A8A305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4398EE272052615900A8A305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4398EE292052615900A8A305 /* icareFoneDatainfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = icareFoneDatainfo.entitlements; sourceTree = "<group>"; };
+		4398EE2E2052615900A8A305 /* icareFoneDatainfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icareFoneDatainfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4398EE322052615900A8A305 /* icareFoneDatainfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = icareFoneDatainfoTests.m; sourceTree = "<group>"; };
+		4398EE342052615900A8A305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4398EE3E205261C500A8A305 /* CIBookManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIBookManager.h; sourceTree = "<group>"; };
+		4398EE3F205261C500A8A305 /* CIBookManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIBookManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4398EE182052615900A8A305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4398EE2B2052615900A8A305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4398EE122052615900A8A305 = {
+			isa = PBXGroup;
+			children = (
+				4398EE1D2052615900A8A305 /* icareFoneDatainfo */,
+				4398EE312052615900A8A305 /* icareFoneDatainfoTests */,
+				4398EE1C2052615900A8A305 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4398EE1C2052615900A8A305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4398EE1B2052615900A8A305 /* icareFoneDatainfo.app */,
+				4398EE2E2052615900A8A305 /* icareFoneDatainfoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4398EE1D2052615900A8A305 /* icareFoneDatainfo */ = {
+			isa = PBXGroup;
+			children = (
+				4398EE3D2052616C00A8A305 /* Model */,
+				4398EE1E2052615900A8A305 /* AppDelegate.h */,
+				4398EE1F2052615900A8A305 /* AppDelegate.m */,
+				4398EE212052615900A8A305 /* Assets.xcassets */,
+				4398EE232052615900A8A305 /* MainMenu.xib */,
+				4398EE262052615900A8A305 /* Info.plist */,
+				4398EE272052615900A8A305 /* main.m */,
+				4398EE292052615900A8A305 /* icareFoneDatainfo.entitlements */,
+			);
+			path = icareFoneDatainfo;
+			sourceTree = "<group>";
+		};
+		4398EE312052615900A8A305 /* icareFoneDatainfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4398EE322052615900A8A305 /* icareFoneDatainfoTests.m */,
+				4398EE342052615900A8A305 /* Info.plist */,
+			);
+			path = icareFoneDatainfoTests;
+			sourceTree = "<group>";
+		};
+		4398EE3D2052616C00A8A305 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4398EE3E205261C500A8A305 /* CIBookManager.h */,
+				4398EE3F205261C500A8A305 /* CIBookManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4398EE1A2052615900A8A305 /* icareFoneDatainfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4398EE372052615900A8A305 /* Build configuration list for PBXNativeTarget "icareFoneDatainfo" */;
+			buildPhases = (
+				4398EE172052615900A8A305 /* Sources */,
+				4398EE182052615900A8A305 /* Frameworks */,
+				4398EE192052615900A8A305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = icareFoneDatainfo;
+			productName = icareFoneDatainfo;
+			productReference = 4398EE1B2052615900A8A305 /* icareFoneDatainfo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4398EE2D2052615900A8A305 /* icareFoneDatainfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4398EE3A2052615900A8A305 /* Build configuration list for PBXNativeTarget "icareFoneDatainfoTests" */;
+			buildPhases = (
+				4398EE2A2052615900A8A305 /* Sources */,
+				4398EE2B2052615900A8A305 /* Frameworks */,
+				4398EE2C2052615900A8A305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4398EE302052615900A8A305 /* PBXTargetDependency */,
+			);
+			name = icareFoneDatainfoTests;
+			productName = icareFoneDatainfoTests;
+			productReference = 4398EE2E2052615900A8A305 /* icareFoneDatainfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4398EE132052615900A8A305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = wudong;
+				TargetAttributes = {
+					4398EE1A2052615900A8A305 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4398EE2D2052615900A8A305 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4398EE1A2052615900A8A305;
+					};
+				};
+			};
+			buildConfigurationList = 4398EE162052615900A8A305 /* Build configuration list for PBXProject "icareFoneDatainfo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4398EE122052615900A8A305;
+			productRefGroup = 4398EE1C2052615900A8A305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4398EE1A2052615900A8A305 /* icareFoneDatainfo */,
+				4398EE2D2052615900A8A305 /* icareFoneDatainfoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4398EE192052615900A8A305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4398EE222052615900A8A305 /* Assets.xcassets in Resources */,
+				4398EE252052615900A8A305 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4398EE2C2052615900A8A305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4398EE172052615900A8A305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4398EE282052615900A8A305 /* main.m in Sources */,
+				4398EE202052615900A8A305 /* AppDelegate.m in Sources */,
+				4398EE40205261C500A8A305 /* CIBookManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4398EE2A2052615900A8A305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4398EE332052615900A8A305 /* icareFoneDatainfoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4398EE302052615900A8A305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4398EE1A2052615900A8A305 /* icareFoneDatainfo */;
+			targetProxy = 4398EE2F2052615900A8A305 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4398EE232052615900A8A305 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4398EE242052615900A8A305 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4398EE352052615900A8A305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4398EE362052615900A8A305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4398EE382052615900A8A305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = icareFoneDatainfo/icareFoneDatainfo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = icareFoneDatainfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.icareFoneDatainfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4398EE392052615900A8A305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = icareFoneDatainfo/icareFoneDatainfo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = icareFoneDatainfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.icareFoneDatainfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4398EE3B2052615900A8A305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = icareFoneDatainfoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.icareFoneDatainfoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/icareFoneDatainfo.app/Contents/MacOS/icareFoneDatainfo";
+			};
+			name = Debug;
+		};
+		4398EE3C2052615900A8A305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = icareFoneDatainfoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.icareFoneDatainfoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/icareFoneDatainfo.app/Contents/MacOS/icareFoneDatainfo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4398EE162052615900A8A305 /* Build configuration list for PBXProject "icareFoneDatainfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4398EE352052615900A8A305 /* Debug */,
+				4398EE362052615900A8A305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4398EE372052615900A8A305 /* Build configuration list for PBXNativeTarget "icareFoneDatainfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4398EE382052615900A8A305 /* Debug */,
+				4398EE392052615900A8A305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4398EE3A2052615900A8A305 /* Build configuration list for PBXNativeTarget "icareFoneDatainfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4398EE3B2052615900A8A305 /* Debug */,
+				4398EE3C2052615900A8A305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4398EE132052615900A8A305 /* Project object */;
+}
