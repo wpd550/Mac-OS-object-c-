@@ -14,6 +14,8 @@
 		43E7115020578661007C3D15 /* testCreatePDFwithViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7114F20578661007C3D15 /* testCreatePDFwithViewTests.m */; };
 		43E7115D20578693007C3D15 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7115B20578693007C3D15 /* testView.m */; };
 		43E7115E20578693007C3D15 /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7115C20578693007C3D15 /* testView.xib */; };
+		43E711622057B7C4007C3D15 /* CreatePDFWithTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E711602057B7C4007C3D15 /* CreatePDFWithTable.m */; };
+		43E711632057B7C4007C3D15 /* CreatePDFWithTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E711612057B7C4007C3D15 /* CreatePDFWithTable.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 		43E7115A20578693007C3D15 /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
 		43E7115B20578693007C3D15 /* testView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
 		43E7115C20578693007C3D15 /* testView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
+		43E7115F2057B7C4007C3D15 /* CreatePDFWithTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatePDFWithTable.h; sourceTree = "<group>"; };
+		43E711602057B7C4007C3D15 /* CreatePDFWithTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatePDFWithTable.m; sourceTree = "<group>"; };
+		43E711612057B7C4007C3D15 /* CreatePDFWithTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePDFWithTable.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +94,7 @@
 				43E7114320578661007C3D15 /* Info.plist */,
 				43E7114420578661007C3D15 /* main.m */,
 				43E7114620578661007C3D15 /* testCreatePDFwithView.entitlements */,
-				43E7115A20578693007C3D15 /* testView.h */,
-				43E7115B20578693007C3D15 /* testView.m */,
-				43E7115C20578693007C3D15 /* testView.xib */,
+				43E711642057B7CB007C3D15 /* CreatePDF */,
 			);
 			path = testCreatePDFwithView;
 			sourceTree = "<group>";
@@ -103,6 +106,19 @@
 				43E7115120578661007C3D15 /* Info.plist */,
 			);
 			path = testCreatePDFwithViewTests;
+			sourceTree = "<group>";
+		};
+		43E711642057B7CB007C3D15 /* CreatePDF */ = {
+			isa = PBXGroup;
+			children = (
+				43E7115A20578693007C3D15 /* testView.h */,
+				43E7115B20578693007C3D15 /* testView.m */,
+				43E7115C20578693007C3D15 /* testView.xib */,
+				43E7115F2057B7C4007C3D15 /* CreatePDFWithTable.h */,
+				43E711602057B7C4007C3D15 /* CreatePDFWithTable.m */,
+				43E711612057B7C4007C3D15 /* CreatePDFWithTable.xib */,
+			);
+			path = CreatePDF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +171,11 @@
 					43E7113720578661007C3D15 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					43E7114A20578661007C3D15 = {
 						CreatedOnToolsVersion = 9.2;
@@ -188,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E7113F20578661007C3D15 /* Assets.xcassets in Resources */,
+				43E711632057B7C4007C3D15 /* CreatePDFWithTable.xib in Resources */,
 				43E7115E20578693007C3D15 /* testView.xib in Resources */,
 				43E7114220578661007C3D15 /* MainMenu.xib in Resources */,
 			);
@@ -208,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E7115D20578693007C3D15 /* testView.m in Sources */,
+				43E711622057B7C4007C3D15 /* CreatePDFWithTable.m in Sources */,
 				43E7114520578661007C3D15 /* main.m in Sources */,
 				43E7113D20578661007C3D15 /* AppDelegate.m in Sources */,
 			);
@@ -350,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = testCreatePDFwithView/testCreatePDFwithView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = testCreatePDFwithView/Info.plist;
@@ -364,7 +386,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = testCreatePDFwithView/testCreatePDFwithView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = testCreatePDFwithView/Info.plist;

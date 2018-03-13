@@ -23,11 +23,13 @@
     CGRect mediaBox = CGRectMake (0, 0, myPageWidth, myPageHeight);
     
     
-    // 2.设置pdf文档存储的路径
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = paths[0];
-    NSString *filePath = [documentsDirectory stringByAppendingString:@"/test.pdf"];
-//    NSString *filePath = [NSString stringWithFormat:@"/Users/wudong/Desktop/test.pdf"];
+     //2.设置pdf文档存储的路径
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *documentsDirectory = paths[0];
+//    NSString *filePath = [documentsDirectory stringByAppendingString:@"/test.pdf"];
+ 
+    NSString *filePath = @"/Users/wudong/Desktop/create.pdf";
+    
     NSLog(@"%@", filePath);
     const char *cfilePath = [filePath UTF8String];
     CFStringRef pathRef = CFStringCreateWithCString(NULL, cfilePath, kCFStringEncodingUTF8);
@@ -65,8 +67,8 @@
     
     // 为一个矩形设置一个跳转终点
     CGPDFContextAddDestinationAtPoint(myPDFContext, CFSTR("page"), CGPointMake(120.0, 400.0));
-    CGPDFContextSetDestinationForRect(myPDFContext, CFSTR("page"), CGRectMake(50.0, 300.0, 100.0, 100.0)); // 跳转点的name为page
-    //    CGPDFContextSetDestinationForRect(myPDFContext, CFSTR("page2"), CGRectMake(50.0, 300.0, 100.0, 100.0)); // 跳转点的name为page2
+   // CGPDFContextSetDestinationForRect(myPDFContext, CFSTR("page"), CGRectMake(50.0, 300.0, 100.0, 100.0)); // 跳转点的name为page
+    CGPDFContextSetDestinationForRect(myPDFContext, CFSTR("page2"), CGRectMake(50.0, 300.0, 100.0, 100.0)); // 跳转点的name为page2
     CGContextSetRGBFillColor(myPDFContext, 1, 0, 1, 0.5);
     CGContextFillEllipseInRect(myPDFContext, CGRectMake(50.0, 300.0, 100.0, 100.0));
     
@@ -91,8 +93,8 @@
     CGContextSetRGBFillColor (myPDFContext, 0, 0, 0, 1);
     const char *text = [@"Hello world" UTF8String];
     CGContextShowTextAtPoint (myPDFContext, 120, 80, text, strlen(text));
-    //    CGPDFContextAddDestinationAtPoint(myPDFContext, CFSTR("page2"), CGPointMake(120.0, 120.0));  // 跳转点的name为page2
-    //    CGPDFContextAddDestinationAtPoint(myPDFContext, CFSTR("page"), CGPointMake(120.0, 120.0)); // 跳转点的name为page
+    CGPDFContextAddDestinationAtPoint(myPDFContext, CFSTR("page2"), CGPointMake(120.0, 480.0));  // 跳转点的name为page2
+     //   CGPDFContextAddDestinationAtPoint(myPDFContext, CFSTR("page"), CGPointMake(120.0, 120.0)); // 跳转点的name为page
     
     // 为右上角的矩形设置一段file URL链接，打开本地文件
     NSURL *furl = [NSURL fileURLWithPath:@"/Users/wudong/Desktop/test.txt"];

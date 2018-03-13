@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "testView.h"
+#import "CreatePDFWithTable.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    testView *_subView = [[testView alloc] initWithNibName:@"testView" bundle:nil];
+    //testView *_subView = [[testView alloc] initWithNibName:@"testView" bundle:nil];
+    CreatePDFWithTable *_subView = [[CreatePDFWithTable alloc] initWithNibName:@"CreatePDFWithTable" bundle:nil];
     
     NSLayoutConstraint * left = [NSLayoutConstraint constraintWithItem:_subView.view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.window.contentView attribute:NSLayoutAttributeLeft multiplier:1 constant:0];
     NSLayoutConstraint * right = [NSLayoutConstraint constraintWithItem:_subView.view attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.window.contentView attribute:NSLayoutAttributeRight multiplier:1 constant:0];
