@@ -27,6 +27,7 @@ typedef void(^CIBookFileSizeProgressBlock)(long long currentSize,long long total
     CIBookFileCountProgressBlock _fileCountProgressBlock;
     
     NSOperationQueue *_operationQueue;
+    NSLock *_lock;
 }
 @property(copy)CIBookCompletionBlock completionBlock;
 @property(copy)CIBookFileSizeProgressBlock fileSizeProgressBlock;

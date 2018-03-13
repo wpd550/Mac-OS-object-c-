@@ -1,25 +1,24 @@
 //
-//  AppDelegate.m
-//  icareFoneDatainfo
+//  testView.m
+//  testCreatePDFwithView
 //
-//  Created by wudong on 2018/3/9.
+//  Created by wudong on 2018/3/13.
 //  Copyright © 2018年 wudong. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "testView.h"
 
-@interface AppDelegate ()
+@interface testView ()
 
-@property (weak) IBOutlet NSWindow *window;
 @end
 
-@implementation AppDelegate
+@implementation testView
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-    
-
-    CGFloat myPageWidth = 500;
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do view setup here.
+    // 1.创建media box
+    CGFloat myPageWidth = 480;
     CGFloat myPageHeight = 700;
     CGRect mediaBox = CGRectMake (0, 0, myPageWidth, myPageHeight);
     
@@ -28,7 +27,8 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = paths[0];
     NSString *filePath = [documentsDirectory stringByAppendingString:@"/test.pdf"];
-    // NSLog(@"%@", filePath);
+//    NSString *filePath = [NSString stringWithFormat:@"/Users/wudong/Desktop/test.pdf"];
+    NSLog(@"%@", filePath);
     const char *cfilePath = [filePath UTF8String];
     CFStringRef pathRef = CFStringCreateWithCString(NULL, cfilePath, kCFStringEncodingUTF8);
     
@@ -89,13 +89,13 @@
     CGContextSelectFont(myPDFContext, "Helvetica", 30, kCGEncodingMacRoman);
     CGContextSetTextDrawingMode (myPDFContext, kCGTextFill);
     CGContextSetRGBFillColor (myPDFContext, 0, 0, 0, 1);
-    const char *text = [@"Page 2" UTF8String];
+    const char *text = [@"Hello world" UTF8String];
     CGContextShowTextAtPoint (myPDFContext, 120, 80, text, strlen(text));
     //    CGPDFContextAddDestinationAtPoint(myPDFContext, CFSTR("page2"), CGPointMake(120.0, 120.0));  // 跳转点的name为page2
     //    CGPDFContextAddDestinationAtPoint(myPDFContext, CFSTR("page"), CGPointMake(120.0, 120.0)); // 跳转点的name为page
     
     // 为右上角的矩形设置一段file URL链接，打开本地文件
-    NSURL *furl = [NSURL fileURLWithPath:@"/Users/one/Library/Application Support/iPhone Simulator/7.0/Applications/3E7CB341-693A-4FE4-8FE5-A827A5210F0A/Documents/test1.pdf"];
+    NSURL *furl = [NSURL fileURLWithPath:@"/Users/wudong/Desktop/test.txt"];
     CFURLRef fileURL = (__bridge CFURLRef)furl;
     CGContextSetRGBFillColor (myPDFContext, 0, 0, 0, 1);
     CGContextFillRect (myPDFContext, CGRectMake (200, 200, 100, 200 ));
@@ -118,12 +118,27 @@
     CFRelease(pageDictionary);
     CFRelease(myValues[0]);
     CGContextRelease(myPDFContext);
+
 }
-
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
-}
-
+CGContextRef MyPDFContextCreate (const CGRect *inMediaBox, CFStringRef path)
+{
+    CGContextRef myOutContext = NULL;
+    CFURLRef url;
+    CGDataConsumerRef dataConsumer;
+    
+    url = CFURLCreateWithFileSystemPath (NULL, path, kCFURLPOSIXPathStyle, false);
+    
+    if (url != NULL)
+    {
+        dataConsumer = CGDataConsumerCreateWithURL(url);
+        if (dataConsumer != NULL)
+        {
+            myOutContext = CGPDFContextCreate (dataConsumer, inMediaBox, NULL);
+            CGDataConsumerRelease (dataConsumer);
+        }
+        CFRelease(url);
+    }
+    return myOutContext;
+}  
 
 @end

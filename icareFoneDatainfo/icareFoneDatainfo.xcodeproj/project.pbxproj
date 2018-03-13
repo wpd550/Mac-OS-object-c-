@@ -13,6 +13,8 @@
 		4398EE282052615900A8A305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4398EE272052615900A8A305 /* main.m */; };
 		4398EE332052615900A8A305 /* icareFoneDatainfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4398EE322052615900A8A305 /* icareFoneDatainfoTests.m */; };
 		4398EE40205261C500A8A305 /* CIBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4398EE3F205261C500A8A305 /* CIBookManager.m */; };
+		43E7112B20569F5B007C3D15 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7112A20569F5B007C3D15 /* test.m */; };
+		43E7112E20569F78007C3D15 /* test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7112D20569F78007C3D15 /* test2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 		4398EE342052615900A8A305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4398EE3E205261C500A8A305 /* CIBookManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIBookManager.h; sourceTree = "<group>"; };
 		4398EE3F205261C500A8A305 /* CIBookManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIBookManager.m; sourceTree = "<group>"; };
+		43E7112920569F5B007C3D15 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		43E7112A20569F5B007C3D15 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		43E7112C20569F78007C3D15 /* test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test2.h; sourceTree = "<group>"; };
+		43E7112D20569F78007C3D15 /* test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 				4398EE262052615900A8A305 /* Info.plist */,
 				4398EE272052615900A8A305 /* main.m */,
 				4398EE292052615900A8A305 /* icareFoneDatainfo.entitlements */,
+				43E7112920569F5B007C3D15 /* test.h */,
+				43E7112A20569F5B007C3D15 /* test.m */,
+				43E7112C20569F78007C3D15 /* test2.h */,
+				43E7112D20569F78007C3D15 /* test2.m */,
 			);
 			path = icareFoneDatainfo;
 			sourceTree = "<group>";
@@ -211,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E7112E20569F78007C3D15 /* test2.m in Sources */,
 				4398EE282052615900A8A305 /* main.m in Sources */,
+				43E7112B20569F5B007C3D15 /* test.m in Sources */,
 				4398EE202052615900A8A305 /* AppDelegate.m in Sources */,
 				4398EE40205261C500A8A305 /* CIBookManager.m in Sources */,
 			);
