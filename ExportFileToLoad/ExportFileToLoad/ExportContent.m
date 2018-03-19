@@ -345,7 +345,93 @@
     return 0;
 }
 
-
++ (int)saveToText:(id)data ToDirectory:(NSString *)directory Progress:(int(^)(int index, int count))progress
+{
+    NSString *outpath = [self createNewFileNameWithDirectory:directory Postfix:@"txt"];
+    
+    NSOutputStream *output = [[NSOutputStream alloc] initToFileAtPath:outpath append:YES];
+    [output open];
+    NSMutableArray *arrayData = [[NSMutableArray alloc] init];
+    if([data isKindOfClass:[NSArray class]])
+    {
+        NSUInteger fileCount = [data count];
+        for (int i = 0; i < fileCount; i++)
+        {
+            [arrayData addObject:[self dicFromObjectPro:[data objectAtIndex:i]]];
+        }
+    }
+    else
+    {
+        [arrayData addObject:[self dicFromObjectPro:data]];
+    }
+    if(arrayData == nil || [arrayData count] == 0)
+    {
+        NSLog(@"无效的arraydata 数组");
+        return -1;
+    }
+    
+    NSMutableString *header = [NSMutableString string];
+    NSMutableArray *keys = [NSMutableArray array];
+    if ([arrayData count] > 0)
+    {
+        NSDictionary *dicData = [arrayData firstObject];
+        for (int i = 0; i < [dicData.allKeys count]; i++)
+        {
+            if (i == [dicData.allKeys count] - 1)
+            {
+                //[header appendFormat:@"%@;\n", [dicData.allKeys objectAtIndex:i]];
+                [keys addObject:[dicData.allKeys objectAtIndex:i]];
+            }
+            else
+            {
+                //[header appendFormat:@"%@;", [dicData.allKeys objectAtIndex:i]];
+                [keys addObject:[dicData.allKeys objectAtIndex:i]];
+            }
+        }
+    }
+    
+//    const uint8_t *headerString = (const uint8_t *)[header cStringUsingEncoding:NSUTF8StringEncoding];
+//    NSInteger headerLength = [header lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
+//    [output write:headerString maxLength:headerLength];
+    
+    int crruentCount = 0;
+    NSUInteger totalCount = [arrayData count];
+    for (NSDictionary *dicData in arrayData)
+    {
+        NSMutableString *row = [NSMutableString string];
+        if(progress){
+            if(progress(crruentCount,(int)totalCount) != 0)
+            {
+                break;
+            }
+        }
+        for (int i = 0; i < [dicData.allValues count]; i++)
+        {
+            
+            if (i == [dicData.allValues count] - 1)
+            {
+                [row appendFormat:@"%@ : %@;\n",[keys objectAtIndex:i],([[dicData objectForKey:[keys objectAtIndex:i]] isEqual:@""])?@"<null>":[dicData objectForKey:[keys objectAtIndex:i]]];
+            }
+            else
+            {
+                [row appendFormat:@"%@ : %@; ",[keys objectAtIndex:i],([[dicData objectForKey:[keys objectAtIndex:i]] isEqual:@""])?@"<null>":[dicData objectForKey:[keys objectAtIndex:i]]];
+            }
+        }
+        crruentCount++;
+        if(progress){
+            if(progress(crruentCount,(int)totalCount) != 0)
+            {
+                break;
+            }
+        }
+        const uint8_t *rowString = (const uint8_t *)[row cStringUsingEncoding:NSUTF8StringEncoding];
+        NSInteger rowLength = [row lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
+        [output write:rowString maxLength:rowLength];
+    }
+    
+    [output close];
+    return 0;
+}
 
 
 @end

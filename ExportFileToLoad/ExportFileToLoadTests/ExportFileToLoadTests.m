@@ -41,9 +41,10 @@
     foo.emailList = @[@"sfa@234.com", @"2@34.com"];
     
     Moo *moo = [[Moo alloc] init];
+    Moo *moo3 = [[Moo alloc] init];
     moo.name = @"moo";
     moo.pwd = @"234";
-    moo.profile = @"mooooo";
+    moo.profile = @" ";
     
     foo.moo = moo;
     
@@ -61,26 +62,38 @@
     foo.childrenList = @{@"name":@"gao", @"pwd":@"32424"};
     foo.MooDic = @{@"1" : @{@"s1" : moo1, @"s2" : moo2, @"s3" : @[@"1", @"2"]}, @"2" : moo2};
     
-    NSArray *array = [NSArray arrayWithObjects:moo,moo2,moo1, nil];
+    NSArray *array = [NSArray arrayWithObjects:moo,moo2,moo1, moo3,nil];
     
 
-    [ExportContent saveToCSV:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:nil];
-    [ExportContent saveToExcel:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:nil];
-    [ExportContent saveToCSV:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:^int(int index, int count) {
-        NSLog(@"完成 %d / %d",index,count);
-//        if(index == 2){
-//            return -1;
-//        }
-        return 0;
-    }];
-    [ExportContent saveToXML:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:^int(int index, int count) {
-        NSLog(@"完成 %d / %d",index,count);
-        //        if(index == 2){
-        //            return -1;
-        //        }
-        return 0;
-    }];
-
+//    [ExportContent saveToCSV:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:nil];
+//    [ExportContent saveToExcel:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:nil];
+//    [ExportContent saveToCSV:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:^int(int index, int count) {
+//        NSLog(@"完成 %d / %d",index,count);
+////        if(index == 2){
+////            return -1;
+////        }
+//        return 0;
+//    }];
+//    [ExportContent saveToXML:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:^int(int index, int count) {
+//        NSLog(@"完成 %d / %d",index,count);
+//        //        if(index == 2){
+//        //            return -1;
+//        //        }
+//        return 0;
+//    }];
+//    NSString *homePath  = @"/Users/wudong/Desktop/archiver.archiver";
+//    BOOL flag = [NSKeyedArchiver archiveRootObject:@"hello world" toFile:homePath];//归档一个字符串
+//
+//    NSString *str = [NSKeyedUnarchiver unarchiveObjectWithFile:homePath];
+//        [ExportContent saveToText:array ToDirectory:@"/Users/wudong/Desktop/dic" Progress:^int(int index, int count) {
+//            NSLog(@"完成 %d / %d",index,count);
+//            return 0;
+//        }];
+    
+    NSString *str = [NSString stringWithFormat:@"12321312321"];
+    NSData *data =  [str dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [data writeToFile:@"/Users/wudong/Desktop/data" atomically:YES];
     
 }
 

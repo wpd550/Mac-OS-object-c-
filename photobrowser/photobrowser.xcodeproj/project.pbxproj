@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43572EC5205F53720007778F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43572EC4205F53720007778F /* AppDelegate.m */; };
+		43572EC7205F53720007778F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43572EC6205F53720007778F /* Assets.xcassets */; };
+		43572ECA205F53720007778F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43572EC8205F53720007778F /* MainMenu.xib */; };
+		43572ECD205F53720007778F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43572ECC205F53720007778F /* main.m */; };
+		43572ED9205F53E70007778F /* PhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43572ED7205F53E70007778F /* PhotoBrowserController.m */; };
+		43572EDA205F53E70007778F /* PhotoBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43572ED8205F53E70007778F /* PhotoBrowserController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43572EC0205F53720007778F /* photobrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photobrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43572EC3205F53720007778F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		43572EC4205F53720007778F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43572EC6205F53720007778F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43572EC9205F53720007778F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		43572ECB205F53720007778F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43572ECC205F53720007778F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43572ECE205F53720007778F /* photobrowser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = photobrowser.entitlements; sourceTree = "<group>"; };
+		43572ED6205F53E70007778F /* PhotoBrowserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserController.h; sourceTree = "<group>"; };
+		43572ED7205F53E70007778F /* PhotoBrowserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserController.m; sourceTree = "<group>"; };
+		43572ED8205F53E70007778F /* PhotoBrowserController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoBrowserController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43572EBD205F53720007778F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43572EB7205F53720007778F = {
+			isa = PBXGroup;
+			children = (
+				43572EC2205F53720007778F /* photobrowser */,
+				43572EC1205F53720007778F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43572EC1205F53720007778F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43572EC0205F53720007778F /* photobrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43572EC2205F53720007778F /* photobrowser */ = {
+			isa = PBXGroup;
+			children = (
+				43572ED4205F53790007778F /* View */,
+				43572EC3205F53720007778F /* AppDelegate.h */,
+				43572EC4205F53720007778F /* AppDelegate.m */,
+				43572EC6205F53720007778F /* Assets.xcassets */,
+				43572EC8205F53720007778F /* MainMenu.xib */,
+				43572ECB205F53720007778F /* Info.plist */,
+				43572ECC205F53720007778F /* main.m */,
+				43572ECE205F53720007778F /* photobrowser.entitlements */,
+			);
+			path = photobrowser;
+			sourceTree = "<group>";
+		};
+		43572ED4205F53790007778F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43572ED6205F53E70007778F /* PhotoBrowserController.h */,
+				43572ED7205F53E70007778F /* PhotoBrowserController.m */,
+				43572ED8205F53E70007778F /* PhotoBrowserController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43572EBF205F53720007778F /* photobrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43572ED1205F53720007778F /* Build configuration list for PBXNativeTarget "photobrowser" */;
+			buildPhases = (
+				43572EBC205F53720007778F /* Sources */,
+				43572EBD205F53720007778F /* Frameworks */,
+				43572EBE205F53720007778F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = photobrowser;
+			productName = photobrowser;
+			productReference = 43572EC0205F53720007778F /* photobrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43572EB8205F53720007778F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = wudong;
+				TargetAttributes = {
+					43572EBF205F53720007778F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 43572EBB205F53720007778F /* Build configuration list for PBXProject "photobrowser" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43572EB7205F53720007778F;
+			productRefGroup = 43572EC1205F53720007778F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43572EBF205F53720007778F /* photobrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43572EBE205F53720007778F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43572EC7205F53720007778F /* Assets.xcassets in Resources */,
+				43572EDA205F53E70007778F /* PhotoBrowserController.xib in Resources */,
+				43572ECA205F53720007778F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43572EBC205F53720007778F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43572ED9205F53E70007778F /* PhotoBrowserController.m in Sources */,
+				43572ECD205F53720007778F /* main.m in Sources */,
+				43572EC5205F53720007778F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43572EC8205F53720007778F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43572EC9205F53720007778F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43572ECF205F53720007778F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		43572ED0205F53720007778F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		43572ED2205F53720007778F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = photobrowser/photobrowser.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = photobrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.photobrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43572ED3205F53720007778F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = photobrowser/photobrowser.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = photobrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.photobrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43572EBB205F53720007778F /* Build configuration list for PBXProject "photobrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43572ECF205F53720007778F /* Debug */,
+				43572ED0205F53720007778F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43572ED1205F53720007778F /* Build configuration list for PBXNativeTarget "photobrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43572ED2205F53720007778F /* Debug */,
+				43572ED3205F53720007778F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43572EB8205F53720007778F /* Project object */;
+}
