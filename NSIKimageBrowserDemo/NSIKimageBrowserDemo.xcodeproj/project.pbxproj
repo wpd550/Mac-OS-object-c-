@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		438941002063627700A75DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 438940FF2063627700A75DB0 /* AppDelegate.m */; };
+		438941022063627700A75DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438941012063627700A75DB0 /* Assets.xcassets */; };
+		438941052063627700A75DB0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438941032063627700A75DB0 /* MainMenu.xib */; };
+		438941082063627700A75DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 438941072063627700A75DB0 /* main.m */; };
+		43894116206362FA00A75DB0 /* TSImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43894111206362FA00A75DB0 /* TSImageBrowserCell.m */; };
+		43894117206362FA00A75DB0 /* TSImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43894112206362FA00A75DB0 /* TSImageBrowserView.m */; };
+		43894118206362FA00A75DB0 /* TSImageBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43894114206362FA00A75DB0 /* TSImageBrowserController.m */; };
+		438941312063657500A75DB0 /* TSBaseTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389411B2063657400A75DB0 /* TSBaseTableRowView.m */; };
+		438941322063657500A75DB0 /* TSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389411D2063657400A75DB0 /* TSBaseViewController.m */; };
+		438941332063657500A75DB0 /* TSCheckBoxTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389411F2063657400A75DB0 /* TSCheckBoxTableCellView.m */; };
+		438941342063657500A75DB0 /* TSBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 438941222063657400A75DB0 /* TSBaseTableView.m */; };
+		438941352063657500A75DB0 /* TSBaseTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 438941242063657400A75DB0 /* TSBaseTableViewModel.m */; };
+		438941362063657500A75DB0 /* TSTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438941262063657400A75DB0 /* TSTableController.m */; };
+		438941372063657500A75DB0 /* TSBaseOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389412A2063657500A75DB0 /* TSBaseOutlineView.m */; };
+		438941382063657500A75DB0 /* TSBaseOutlineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389412C2063657500A75DB0 /* TSBaseOutlineViewModel.m */; };
+		438941392063657500A75DB0 /* TSOutlineBaseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389412E2063657500A75DB0 /* TSOutlineBaseNode.m */; };
+		4389413A2063657500A75DB0 /* TSOutlineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438941302063657500A75DB0 /* TSOutlineController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		438940FB2063627700A75DB0 /* NSIKimageBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSIKimageBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		438940FE2063627700A75DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		438940FF2063627700A75DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		438941012063627700A75DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		438941042063627700A75DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		438941062063627700A75DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438941072063627700A75DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		438941092063627700A75DB0 /* NSIKimageBrowserDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSIKimageBrowserDemo.entitlements; sourceTree = "<group>"; };
+		43894110206362FA00A75DB0 /* TSImageBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSImageBrowserController.h; sourceTree = "<group>"; };
+		43894111206362FA00A75DB0 /* TSImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSImageBrowserCell.m; sourceTree = "<group>"; };
+		43894112206362FA00A75DB0 /* TSImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSImageBrowserView.m; sourceTree = "<group>"; };
+		43894113206362FA00A75DB0 /* TSImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSImageBrowserView.h; sourceTree = "<group>"; };
+		43894114206362FA00A75DB0 /* TSImageBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSImageBrowserController.m; sourceTree = "<group>"; };
+		43894115206362FA00A75DB0 /* TSImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSImageBrowserCell.h; sourceTree = "<group>"; };
+		4389411A2063657400A75DB0 /* TSBaseTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTableRowView.h; sourceTree = "<group>"; };
+		4389411B2063657400A75DB0 /* TSBaseTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableRowView.m; sourceTree = "<group>"; };
+		4389411C2063657400A75DB0 /* TSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseViewController.h; sourceTree = "<group>"; };
+		4389411D2063657400A75DB0 /* TSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseViewController.m; sourceTree = "<group>"; };
+		4389411E2063657400A75DB0 /* TSCheckBoxTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCheckBoxTableCellView.h; sourceTree = "<group>"; };
+		4389411F2063657400A75DB0 /* TSCheckBoxTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCheckBoxTableCellView.m; sourceTree = "<group>"; };
+		438941212063657400A75DB0 /* TSBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTableView.h; sourceTree = "<group>"; };
+		438941222063657400A75DB0 /* TSBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableView.m; sourceTree = "<group>"; };
+		438941232063657400A75DB0 /* TSBaseTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseTableViewModel.h; sourceTree = "<group>"; };
+		438941242063657400A75DB0 /* TSBaseTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseTableViewModel.m; sourceTree = "<group>"; };
+		438941252063657400A75DB0 /* TSTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableController.h; sourceTree = "<group>"; };
+		438941262063657400A75DB0 /* TSTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableController.m; sourceTree = "<group>"; };
+		438941272063657400A75DB0 /* TSTableModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableModelDelegate.h; sourceTree = "<group>"; };
+		438941292063657500A75DB0 /* TSBaseOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseOutlineView.h; sourceTree = "<group>"; };
+		4389412A2063657500A75DB0 /* TSBaseOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseOutlineView.m; sourceTree = "<group>"; };
+		4389412B2063657500A75DB0 /* TSBaseOutlineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseOutlineViewModel.h; sourceTree = "<group>"; };
+		4389412C2063657500A75DB0 /* TSBaseOutlineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseOutlineViewModel.m; sourceTree = "<group>"; };
+		4389412D2063657500A75DB0 /* TSOutlineBaseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSOutlineBaseNode.h; sourceTree = "<group>"; };
+		4389412E2063657500A75DB0 /* TSOutlineBaseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSOutlineBaseNode.m; sourceTree = "<group>"; };
+		4389412F2063657500A75DB0 /* TSOutlineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSOutlineController.h; sourceTree = "<group>"; };
+		438941302063657500A75DB0 /* TSOutlineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSOutlineController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		438940F82063627700A75DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		438940F22063627700A75DB0 = {
+			isa = PBXGroup;
+			children = (
+				438940FD2063627700A75DB0 /* NSIKimageBrowserDemo */,
+				438940FC2063627700A75DB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		438940FC2063627700A75DB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				438940FB2063627700A75DB0 /* NSIKimageBrowserDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		438940FD2063627700A75DB0 /* NSIKimageBrowserDemo */ = {
+			isa = PBXGroup;
+			children = (
+				438941192063657400A75DB0 /* BaseTableController */,
+				438941282063657500A75DB0 /* OutlineViewController */,
+				438941202063657400A75DB0 /* TableViewController */,
+				4389410F2063628400A75DB0 /* ImageBrowserView */,
+				438940FE2063627700A75DB0 /* AppDelegate.h */,
+				438940FF2063627700A75DB0 /* AppDelegate.m */,
+				438941012063627700A75DB0 /* Assets.xcassets */,
+				438941032063627700A75DB0 /* MainMenu.xib */,
+				438941062063627700A75DB0 /* Info.plist */,
+				438941072063627700A75DB0 /* main.m */,
+				438941092063627700A75DB0 /* NSIKimageBrowserDemo.entitlements */,
+			);
+			path = NSIKimageBrowserDemo;
+			sourceTree = "<group>";
+		};
+		4389410F2063628400A75DB0 /* ImageBrowserView */ = {
+			isa = PBXGroup;
+			children = (
+				43894110206362FA00A75DB0 /* TSImageBrowserController.h */,
+				43894114206362FA00A75DB0 /* TSImageBrowserController.m */,
+				43894115206362FA00A75DB0 /* TSImageBrowserCell.h */,
+				43894111206362FA00A75DB0 /* TSImageBrowserCell.m */,
+				43894113206362FA00A75DB0 /* TSImageBrowserView.h */,
+				43894112206362FA00A75DB0 /* TSImageBrowserView.m */,
+			);
+			path = ImageBrowserView;
+			sourceTree = "<group>";
+		};
+		438941192063657400A75DB0 /* BaseTableController */ = {
+			isa = PBXGroup;
+			children = (
+				4389411A2063657400A75DB0 /* TSBaseTableRowView.h */,
+				4389411B2063657400A75DB0 /* TSBaseTableRowView.m */,
+				4389411C2063657400A75DB0 /* TSBaseViewController.h */,
+				4389411D2063657400A75DB0 /* TSBaseViewController.m */,
+				4389411E2063657400A75DB0 /* TSCheckBoxTableCellView.h */,
+				4389411F2063657400A75DB0 /* TSCheckBoxTableCellView.m */,
+			);
+			path = BaseTableController;
+			sourceTree = "<group>";
+		};
+		438941202063657400A75DB0 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				438941212063657400A75DB0 /* TSBaseTableView.h */,
+				438941222063657400A75DB0 /* TSBaseTableView.m */,
+				438941232063657400A75DB0 /* TSBaseTableViewModel.h */,
+				438941242063657400A75DB0 /* TSBaseTableViewModel.m */,
+				438941252063657400A75DB0 /* TSTableController.h */,
+				438941262063657400A75DB0 /* TSTableController.m */,
+				438941272063657400A75DB0 /* TSTableModelDelegate.h */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		438941282063657500A75DB0 /* OutlineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				438941292063657500A75DB0 /* TSBaseOutlineView.h */,
+				4389412A2063657500A75DB0 /* TSBaseOutlineView.m */,
+				4389412B2063657500A75DB0 /* TSBaseOutlineViewModel.h */,
+				4389412C2063657500A75DB0 /* TSBaseOutlineViewModel.m */,
+				4389412D2063657500A75DB0 /* TSOutlineBaseNode.h */,
+				4389412E2063657500A75DB0 /* TSOutlineBaseNode.m */,
+				4389412F2063657500A75DB0 /* TSOutlineController.h */,
+				438941302063657500A75DB0 /* TSOutlineController.m */,
+			);
+			path = OutlineViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		438940FA2063627700A75DB0 /* NSIKimageBrowserDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4389410C2063627700A75DB0 /* Build configuration list for PBXNativeTarget "NSIKimageBrowserDemo" */;
+			buildPhases = (
+				438940F72063627700A75DB0 /* Sources */,
+				438940F82063627700A75DB0 /* Frameworks */,
+				438940F92063627700A75DB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSIKimageBrowserDemo;
+			productName = NSIKimageBrowserDemo;
+			productReference = 438940FB2063627700A75DB0 /* NSIKimageBrowserDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		438940F32063627700A75DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = wudong;
+				TargetAttributes = {
+					438940FA2063627700A75DB0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 438940F62063627700A75DB0 /* Build configuration list for PBXProject "NSIKimageBrowserDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 438940F22063627700A75DB0;
+			productRefGroup = 438940FC2063627700A75DB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				438940FA2063627700A75DB0 /* NSIKimageBrowserDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438940F92063627700A75DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438941022063627700A75DB0 /* Assets.xcassets in Resources */,
+				438941052063627700A75DB0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		438940F72063627700A75DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438941362063657500A75DB0 /* TSTableController.m in Sources */,
+				438941322063657500A75DB0 /* TSBaseViewController.m in Sources */,
+				4389413A2063657500A75DB0 /* TSOutlineController.m in Sources */,
+				438941312063657500A75DB0 /* TSBaseTableRowView.m in Sources */,
+				438941372063657500A75DB0 /* TSBaseOutlineView.m in Sources */,
+				43894117206362FA00A75DB0 /* TSImageBrowserView.m in Sources */,
+				438941082063627700A75DB0 /* main.m in Sources */,
+				438941382063657500A75DB0 /* TSBaseOutlineViewModel.m in Sources */,
+				43894118206362FA00A75DB0 /* TSImageBrowserController.m in Sources */,
+				438941392063657500A75DB0 /* TSOutlineBaseNode.m in Sources */,
+				438941332063657500A75DB0 /* TSCheckBoxTableCellView.m in Sources */,
+				43894116206362FA00A75DB0 /* TSImageBrowserCell.m in Sources */,
+				438941342063657500A75DB0 /* TSBaseTableView.m in Sources */,
+				438941002063627700A75DB0 /* AppDelegate.m in Sources */,
+				438941352063657500A75DB0 /* TSBaseTableViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		438941032063627700A75DB0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438941042063627700A75DB0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4389410A2063627700A75DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4389410B2063627700A75DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4389410D2063627700A75DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSIKimageBrowserDemo/NSIKimageBrowserDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSIKimageBrowserDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.NSIKimageBrowserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4389410E2063627700A75DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSIKimageBrowserDemo/NSIKimageBrowserDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSIKimageBrowserDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pp.NSIKimageBrowserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		438940F62063627700A75DB0 /* Build configuration list for PBXProject "NSIKimageBrowserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4389410A2063627700A75DB0 /* Debug */,
+				4389410B2063627700A75DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4389410C2063627700A75DB0 /* Build configuration list for PBXNativeTarget "NSIKimageBrowserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4389410D2063627700A75DB0 /* Debug */,
+				4389410E2063627700A75DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 438940F32063627700A75DB0 /* Project object */;
+}
